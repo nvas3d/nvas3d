@@ -128,7 +128,7 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <video poster="" id="tree" controls loop height="100%">
+                <video poster="" id="tree" controls height="100%">
                     <source src="static/videos/nvas.mp4" type="video/mp4">
                 </video>
                 <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -212,31 +212,69 @@
                             deconvolved audios and our source detection results on an example scene.
                         </p>
                     </div>
+                    <img src="static/images/qualitative_webpage.pdf" alt="" />
                 </div>
             </div>
         </div>
     </section>
     <!-- End paper method -->
 
-    <!-- Results -->
-    <section class="results">
+    <!-- guitar and different sound -->
 
-        <div class="row full-width">
-            <p class="text">Input audio</p>
-            <video poster="" controls loop>
-                <source src="static/videos/input.mp4" type="video/mp4">
-            </video>
-        </div>
+    <!-- Results -->
+
+    <section class="results">
+        <p class="text">Results (guitar + guitar)</p>
+
+
 
         <div class="row">
             <div class="col">
-                <p class="text">Dry sound estimation for source 1</p>
+                <p class="text">Received audio from microphone 1</p>
+                <audio controls>
+                    <source src="static/audios/receiver1.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="col">
+                <p class="text">Received audio from microphone 2</p>
+                <audio controls>
+                    <source src="static/audios/receiver2.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="col">
+                <p class="text">Received audio from microphone 3</p>
+                <audio controls>
+                    <source src="static/audios/receiver3.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="col">
+                <p class="text">Received audio from microphone 4</p>
+                <audio controls>
+                    <source src="static/audios/receiver4.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+
+
+        <div class="row full-width">
+            <p class="text">Scene overview</p>
+            <img src="static/images/scene_overview.png" alt="" />
+            <!-- <video poster="" controls>
+                <source src="static/videos/input.mp4" type="video/mp4">
+            </video> -->
+        </div>
+
+
+
+        <div class="row">
+            <div class="col">
+                <p class="text">Estimated dry sound of source 1</p>
                 <audio controls>
                     <source src="static/audios/dry2.wav" type="audio/wav">
                 </audio>
             </div>
             <div class="col">
-                <p class="text">Dry sound estimation for source 2</p>
+                <p class="text">Estimated dry sound of source 2</p>
                 <audio controls>
                     <source src="static/audios/dry1.wav" type="audio/wav">
                 </audio>
@@ -258,9 +296,9 @@
             </div>
         </div>
 
-        <div class="row full-width">
+        <div class="row full-width-scale">
             <p class="text">Novel-view acoustic synthesis</p>
-            <video poster="" controls loop>
+            <video poster="" controls>
                 <source src="static/videos/nvas.mp4" type="video/mp4">
             </video>
         </div>
@@ -268,19 +306,20 @@
         <div class="row">
             <div class="col">
                 <p class="text">Novel-view acoustic synthesis with source 1 only</p>
-                <video poster="" controls loop>
+                <video poster="" controls>
                     <source src="static/videos/nvas_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="col">
                 <p class="text">Novel-view acoustic synthesis with source 2 only</p>
-                <video poster="" controls loop>
+                <video poster="" controls>
                     <source src="static/videos/nvas_2.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
     </section>
     <!-- End Results -->
+
 
 
 
@@ -352,10 +391,17 @@
                             This page was built using the <a
                                 href="https://github.com/eliahuhorwitz/Academic-project-page-template"
                                 target="_blank">Academic Project Page Template</a>.
-                            <br> This website is licensed under a <a rel="license"
+                            <br> “Classic Microphone” (https://skfb.ly/6Aryq) by urbanmasque is licensed under
+                            Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+                            <br> “Speaker” (https://skfb.ly/orOLP) by giga is licensed under Creative Commons
+                            Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+
+                            <!-- <br> This website is licensed under a <a rel="license"
                                 href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                                Commons Attribution-ShareAlike 4.0 International License</a>. -->
                         </p>
+                        <!-- Credit the CreatorGART230 - Microphone by TabbieCat is licensed under Creative Commons Attribution -->
 
                     </div>
                 </div>
